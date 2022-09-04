@@ -1,15 +1,14 @@
-import { Settings } from "./settings.js";
+import { Platform } from "./platform.js";
+import { Settings } from "koala-engine-core/settings/settings.js";
+import { getPlatformSettings } from "./platform-settings.js";
 
 const canvas = document.querySelector("#canvas") as HTMLCanvasElement;
 const context = canvas.getContext("2d");
+context.imageSmoothingEnabled = true;
 
-// Set canvas size
-Settings.WIDTH = canvas.width = window.innerWidth;
-Settings.HEIGHT = canvas.height = window.innerHeight;
+// Load game settings
+const platformSettings = getPlatformSettings(canvas);
+Settings.loadSettings(platformSettings);
 
-// Draw test
-function draw() {
-    context.fillStyle = "red";
-    context.fillRect(0, 0, Settings.WIDTH / 2, Settings.HEIGHT / 2);
-}
-requestAnimationFrame(draw);
+// START
+new Platform(canvas, context);

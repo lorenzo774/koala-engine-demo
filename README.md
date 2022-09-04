@@ -1,17 +1,16 @@
-# ts-canvas-template
+# koala-engine-demo
 
-<img witdh="40" height="40" src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" />&nbsp;
-<img witdh="40" height="40" src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" />&nbsp;
+![img](https://i.imgur.com/2mUgLmN.png)
 
-A template to create HTML5 canvas projects with typescript.
+[koala-engine](https://github.com/lorenzo774/koala-engine) demo.
 
 ## Installation
 
 -   Clone the repo
 
 ```
-git clone https://github.com/lorenzo774/ts-canvas-template
-cd ts-canvas-template
+git clone https://github.com/lorenzo774/koala-engine-demo
+cd koala-engine-demo
 ```
 
 -   Run in watch mode
@@ -19,10 +18,6 @@ cd ts-canvas-template
 ```
 npm run dev
 ```
-
-## Example
-
-![img](https://i.imgur.com/0wmATnQ.png)
 
 ## Contribution
 
